@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+@import "tailwindcss";
+
+@theme {
+  --font-handwriting: "Pacifico", serif;
+}
+
+@import "tailwindcss-animated";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+   themes: acid --default, dracula --prefersdark; 
+ }
