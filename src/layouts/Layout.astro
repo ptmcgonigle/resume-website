@@ -23,10 +23,12 @@ const { title } = Astro.props;
       <div class="drawer-content flex flex-col">
         <!-- Navbar -->
         <div class="navbar bg-base-300 absolute top-0 w-full">
-          <div class="font-handwriting mx-2 flex-1 px-2 flex flex-row items-center gap-3">
+          <a
+            href="/"
+            class="font-handwriting mx-2 flex flex-1 flex-row items-center gap-3 px-2">
             <span>
               <svg
-                class="w-6 h-6"
+                class="h-6 w-6 fill-gray-800 dark:fill-gray-50"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
@@ -40,7 +42,7 @@ const { title } = Astro.props;
               >
             </span>
             McGonigle
-          </div>
+          </a>
           <div class="flex-none lg:hidden">
             <label
               for="my-drawer-3"
@@ -63,7 +65,7 @@ const { title } = Astro.props;
             <ul class="menu menu-horizontal">
               <!-- Navbar menu content here -->
               <li><a href="/resume">Resume</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -77,8 +79,8 @@ const { title } = Astro.props;
           class="drawer-overlay"></label>
         <ul class="menu bg-base-200 min-h-full w-80 p-4">
           <!-- Sidebar content here -->
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </div>
